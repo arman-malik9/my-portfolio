@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: my-portfolio
-        image: nginx:1.14.2
+        image: ubuntu
         ports:
         - containerPort: 9090
 
