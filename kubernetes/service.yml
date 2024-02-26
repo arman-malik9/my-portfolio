@@ -1,0 +1,12 @@
+kind: Service                             # Defines to create Service type Object
+apiVersion: v1
+metadata:
+  name: portfolioservice
+spec:
+  ports:
+    - port: 80                               # Containers port exposed
+      targetPort: 9090                       # Pods port
+  selector:
+    app: portfolio                    # Apply this service to any pods which has the specific label
+  type: LoadBalancer                       
+
