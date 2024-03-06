@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -74,19 +74,20 @@
 						<li><a href="#" data-nav-section="work">Work</a></li>
 						<li><a href="#" data-nav-section="blog">Blog and Certification</a></li>
 						<li><a href="#" data-nav-section="contact">Contact</a></li>
+						
 					</ul>
 				</div>
 			</nav>
 
 			<div class="colorlib-footer">
-				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				<p><small>&copy; 
 Copyright <script>document.write(new Date().getFullYear());</script> All rights reserved. Made with <i class="icon-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Arman Malik</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </span> </small></p>
+</small></p>
 				<ul>
-					<li><a href="#"><i class="icon-facebook2 text-muted"></i></a></li>
-					<li><a href="#"><i class="icon-twitter2 text-muted"></i></a></li>
-					<li><a href="#"><i class="icon-instagram text-muted"></i></a></li>
-					<li><a href="linkedin.com/in/arman-malik-64a2a91a0"><i class="icon-linkedin2 text-muted"></i></a></li>
+					<li><a th:href="@{https://www.facebook.com/profile.php/?id=100006293224231&name=xhp_nt__fb__action__open_user}"><i class="icon-facebook2 text-muted"></i></a></li>
+					<li><a th:href="@{https://twitter.com/i/flow/login?redirect_after_login=%2FOmarArman09}"><i class="icon-twitter2 text-muted"></i></a></li>
+					<li><a th:href="@{https://instagram.com/0mar_arman/}"><i class="icon-instagram text-muted"></i></a></li>
+					<li><a th:href="@{https://www.linkedin.com/in/arman-malik9/}"><i class="icon-linkedin2 text-muted"></i></a></li>
 				</ul>
 			</div>
 
@@ -105,7 +106,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 					   					<div class="desc ">
 											<h1 class="text-white">Hi! <br>I'm Arman</h1>
 						   					<h2 class="text-white">Based in Noida</h2>
-												<a class="btn btn-learn"><p class="text-white">Download CV <i class="icon-download4"></i></p></a>
+												<a th:href="@{download}" class="btn btn-learn"><p class="text-white">Download CV <i class="icon-download4"></i></p></a>
 											</div>
 					   				</div>
 					   			</div>
@@ -121,7 +122,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 					   					<div class="desc">
 						   					<h1>I am <br>DevOps Engineer</h1>
 												<h2> Provide solutions of cloud services with better relaibility and availabilty. </h2>
-												<p><a class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p>
+												<p><a th:href="@{https://github.com/arman-malik9/}" class="btn btn-primary btn-learn">View GitHub Profile <i class="icon-briefcase3"></i></a></p>
 											</div>
 					   				</div>
 					   			</div>
@@ -473,7 +474,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 					               <div class="timeline-label">
 					                  <h2><a href="#">Software Engineer at HCL TECH</a> <span>Jan,2024-Present</span></h2>
 					                  <p> Creating CI/CD pipeline using Jenkins.
-									 <br> Deploying application using Docker and K8s.
+									 <br> Deploying application using Docker and kubernetes.
 									 </p>
 					               </div>
 					            </div>
@@ -510,42 +511,6 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 					            </div>
 					         </article>
 
-					         <!-- <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-3">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">System Analyst</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article> -->
-
-					         <!-- <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-4">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Creative Designer</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article> -->
-
-					         <!-- <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-5">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">UI/UX Designer at Envato</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article> -->
-
 					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-none">
@@ -573,12 +538,12 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 							<div class="project" style="background-image: url(images/streamline.png);">
 								<div class="desc">
 									<div class="con">
-										<h3><a href="work.html">Streamline web-app</a></h3>
-										<span>Website</span>
+										<h3>Streamline web-app</h3>
+										<span>Web Application</span>
 										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+											<span><a th:href="@{https://github.com/arman-malik9/streamline-application.git}">GitHub <i class="icon-download4"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 406</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 187</a></span>
 										</p>
 									</div>
 								</div>
@@ -588,18 +553,19 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 							<div class="project" style="background-image: url(images/ems.png);">
 								<div class="desc">
 									<div class="con">
-										<h3><a href="work.html">Employee Management System</a></h3>
+										<h3>Employee Management System</h3>
 										<span>Window Based App</span>
+								
 										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+											<span><a th:href="@{https://github.com/arman-malik9/employee-management-app.git}">GitHub <i class="icon-download4"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 39</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 22</a></span>
 										</p>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+						<!-- <div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
 							<div class="project" style="background-image: url(images/img-3.jpg);">
 								<div class="desc">
 									<div class="con">
@@ -628,17 +594,18 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="project" style="background-image: url(images/img-5.jpg);">
 								<div class="desc">
 									<div class="con">
-										<h3><a href="work.html">Work 05</a></h3>
-										<span>Graphic, Logo</span>
+										<h3>Web Tech Work</h3>
+										<span>Web Technologies Work </span>
+									
 										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+											<span><a th:href="@{https://github.com/arman-malik9/web-tech-work.git}" >GitHub <i class="icon-download4"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 45</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 35</a></span>
 										</p>
 									</div>
 								</div>
@@ -648,23 +615,24 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 							<div class="project" style="background-image: url(images/img-6.jpg);">
 								<div class="desc">
 									<div class="con">
-										<h3><a href="work.html">Work 06</a></h3>
-										<span>Web Design</span>
+										<h3>My Portfolio</h3>
+										<span>Web Application</span>
+										
 										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+											<span><a th:href="@{https://github.com/arman-malik9/my-portfolio.git}">GitHub <i class="icon-download4"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 226</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 78</a></span>
 										</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row">
+					<!--div class="row">
 						<div class="col-md-12 animate-box">
 							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
 						</div>
-					</div>
+					</div-->
 				</div>
 			</section>
 
