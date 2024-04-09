@@ -34,6 +34,13 @@
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>target/test-classes</name>
+			<type>2</type>
+			<location>//C:/my portfolio/mypor/target/test-classes/</location>
+		</link>
+	</linkedResources>
 	<filteredResources>
 		<filter>
 			<id>1709522498015</id>
